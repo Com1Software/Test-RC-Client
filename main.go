@@ -1,14 +1,14 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"net/http"
 	"os"
-	"time"
 )
 
-const serverPort = 3333
+func main() {
+
+	const serverPort = 8080
 
 	requestURL := fmt.Sprintf("http://localhost:%d", serverPort)
 	res, err := http.Get(requestURL)
